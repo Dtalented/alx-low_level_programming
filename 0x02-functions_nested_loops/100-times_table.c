@@ -79,6 +79,3 @@ _putchar('\n');
 }
 
 }
-:%s/ \ s\+$//e 
-No spaces inbetween them
-:wq
