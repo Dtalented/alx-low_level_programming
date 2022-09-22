@@ -21,3 +21,7 @@
 10 - the program prints a[2] = 9
 
 11 - a function that adds two numbers
+
+12 - a function that prints a buffer
+
+
