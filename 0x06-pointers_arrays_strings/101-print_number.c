@@ -1,23 +1,41 @@
-/**
-  * print_numbers - Prints any integer with putchar
-  * @n: Number to prints
-  * 
-  * Return: Nothing
-  */
- void print_numbers(int n)
- {
-	unsigned int x;
+#include "main.h"                                                                                                                    
 
-	if (n < 0)
-	{
-		_putchar('_');
-		n *= -1;
-	}
+                                                                                                                                     
 
-	x = n;
+/**                                                                                                                                  
 
-	if (x / 10)
-		print_number(x / 10);
+ * print_number - Prints an integer.                                                                                                  
 
-	_putchar(x % 10 + '0');
+ * @n: The integer to be printed.                                                                                                    
+
+ */                                                                                                                                  
+
+void print_number(int n)                                                                                                              
+
+{                                                                                                                                    
+
+        unsigned int num = n;                                                                                                        
+
+                                                                                                                                     
+
+        if (n < 0)                                                                                                                    
+
+        {                                                                                                                            
+
+                _putchar('-');                                                                                                        
+
+                num = -num;                                                                                                          
+
+        }                                                                                                                            
+
+                                                                                                                                     
+
+        if ((num / 10) > 0)                                                                                                          
+
+                print_number(num / 10);                                                                                              
+
+                                                                                                                                     
+
+        _putchar((num % 10) + '0');                                                                                                  
+
 }
