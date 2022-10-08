@@ -5,13 +5,18 @@
 
 
 /**
+
  * malloc_checked - allocates memory using malloc
+
  * @b: memory to allocate
+
  *
- * Return: pointer to allocaeted memory or normal process termination if error
+
+ * Return: pointer to allocated memory or normal process termination if error
+
  */
 
-void *malloc_checked(unsigned int b);
+void *malloc_checked(unsigned int b)
 
 {
 
